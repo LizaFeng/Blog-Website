@@ -1,0 +1,13 @@
+<%- include('./partials/header'); -%>
+  <h1>Compose</h1><br>
+  <!--Action contains the route that would handle the submission-->
+  <form class="" action="/compose" method="post">
+    <label>Title</label><br>
+    <!--name helps us tap into the value: ex through req.body.__-->
+    <input type="text" class="form-control" name="title"><br>
+    <label>Post</label><br>
+    <textarea class="form-control" name="postBody" rows="8"></textarea><br>
+    <button class="btn btn-primary" type="submit" name="publish">Publish</button><br>
+  </form>
+
+  <%- include('./partials/footer'); -%>
